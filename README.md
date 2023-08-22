@@ -31,6 +31,7 @@ Dengan menerapkan solusi di atas, kami bertujuan untuk menghadirkan aplikasi res
 
 ## Dokumentasi Deploy Aplikasi
 ### User Interface
+![UI](https://github.com/mzfuadi97/frontend-expert/assets/70827786/e23693fd-d66c-42ab-bdf8-5a0705ff3282)
 
 
 Data.json sudah ditutup dicoding

@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.tombol {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  min-height: 100vh;
+}
+
+/*
+ * Header
+ *
+ */
+
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+/*
+    AppBar
+  */
+
+.app-bar {
+  padding: 8px 16px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__brand h1 {
+  color: #db0000;
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+}
+
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+
+.content {
+  margin: auto;
+  min-height: 100%;
+}
+
+.content .content__heading {
+  font-weight: bolder;
+}
+
+.restos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+/*
+  resto Item
+*/
+
+.resto-item {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.resto-item__header {
+  position: relative;
+}
+
+.resto-item .resto-item__header .resto-item__header__poster {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+}
+
+.resto-item .resto-item__header .resto-item__header__rating {
+  position: absolute;
+  top: 65px;
+  padding: 8px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.resto-item .resto-item__header .resto-item__header__rating .resto-item__header__rating__score {
+  margin-left: 10px;
+}
+
+.resto-item .resto-item__content {
+  padding: 16px;
+}
+
+.resto-item .resto-item__content h3 {
+  margin: 0 0 10px 0;
+}
+
+.resto-item .resto-item__content h3 a {
+  color: #db0000;
+  text-decoration: none;
+}
+
+.resto-item .resto-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+/*
+  resto
+*/
+
+.resto {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+
+.resto .resto__poster {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+}
+
+.resto .resto__info h4 {
+  margin: 8px 0;
+}
+
+.text {
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   text-align: justify;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #f2f5f7;
+}
+
+.restaurantInfo {
+  text-align: center;
+}
+
+table tr th {
+  background: #db0000;
+  color: #fff;
+  font-weight: normal;
+}
+
+table,
+th,
+td {
+  padding: 8px 0;
+  text-align: center;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+figure img {
+  height: 100%;
+  object-fit: cover;
+  min-width: 190px;
+  min-height: 250px;
+}
+
+/*
+   Like
+*/
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #0016db;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #db0000;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  display: center;
+}
+
+footer ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
